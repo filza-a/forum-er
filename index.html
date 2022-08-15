@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum-er - Home</title>
+    <link rel="stylesheet" href="./index-style.css">
+</head>
+<body>
+    <div id="div-nav">
+        <div id="logo">Forum-er</div>
+        <nav>
+            
+            <div id="home">
+                <a href="#">Home</a>
+            </div>
+            <div id="starred">
+                <a href="./starred.html">Starred</a>
+            </div>
+            <div id="report-bug">
+                <a href="./bug-report.html">Report a Bug</a>
+            </div>
+            <div id="sort-menu">
+                <label for="sort-opt">Sort based on:</label>
+                <div id="sort-opt">
+                    <div id="div-cat-1">
+                        <input id="sort-c1" type="radio" name="sort-category">
+                        <label for="sort-c1">Date</label>
+                    </div>
+                    <div #div-cat-2>
+                        <input id="sort-c2" type="radio" name="sort-category">
+                        <label for="sort-c2">Usefulness</label>
+                    </div>
+                </div>
+            </div>
+            <div id="reach-us">
+                <div>Reach us at:</div>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:help@forumer.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+    
+            </div>
+            
+        </nav>
+    </div>
+    
+    <main>
+        <div class="container">
+            <label for="add-forum">Add a new Forum</label>
+            <div id="add-forum">
+                <div id="tpc">
+                    <label for="topic">Topic:</label>
+                    <input id="topic" type="text"> 
+                </div>
+                <div id="cont">
+                    <label for="content">Text:</label>
+                    <input id="content" type="text">
+                </div>
+                <input onclick="upload()" type="button" value="Upload">
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/288429812b.js" crossorigin="anonymous"></script>
+    <script src="./forumer-script.js"></script>
+</body>
+</html>
